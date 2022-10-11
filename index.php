@@ -108,7 +108,7 @@ else {
 }
 echo "</div>";
 }
-echo "<h3>Uploaded Files</h3>";
+echo "<h3>Updated Uploaded Files</h3>";
 $files = array_diff(scandir($target_dir), array('.', '..','uploads','.trashcan'));
 foreach ($files as $f) {
   echo "<a href='uploads/$f'><img src='uploads/$f' width='100px' height='100px'/></a>";
